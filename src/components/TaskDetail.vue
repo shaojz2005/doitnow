@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <div id="task-detail">
     任务详情
-  </header>
+  </div>
 </template>
 
 <script>
@@ -12,6 +12,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
+  #task-detail{
+    flex-grow: 1;
+    padding: 20px;
+  }
 </style>

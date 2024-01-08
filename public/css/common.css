@@ -1,0 +1,18 @@
+html, body{
+  height: 100%;
+}
+body {
+  font: 16px/1.4286 arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  color: #666;
+  background-color: #fff;
+}
+input,
+textarea {
+  font-family: arial, "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+i, em{
+  font-style: italic;
+}
+b, strong{
+  font-weight: bold;
+}

@@ -1,22 +1,32 @@
 <template>
-  <header>
+  <div id="task-list">
+    <TaskHeader></TaskHeader>
+    <AddTask></AddTask>
     任务列表
     <TaskItem></TaskItem>
-  </header>
+  </div>
 </template>
 
 <script>
+import TaskHeader from './TaskHeader.vue'
+import AddTask from './AddTask.vue'
 import TaskItem from './TaskItem.vue'
 export default {
   name: 'TaskList',
   components: {
-    TaskItem
+    TaskItem,
+    TaskHeader,
+    AddTask
   },
   props: {
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
+  #task-list{
+    flex-grow: 1;
+    border-right: 1px solid rgba(25, 25, 25, 0.05);
+    padding: 20px;
+  }
 </style>

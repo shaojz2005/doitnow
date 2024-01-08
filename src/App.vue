@@ -1,33 +1,34 @@
 <template>
   <div id="app">
-    <AppHeader></AppHeader>
-    <AddTask></AddTask>
+    <Sidebar></Sidebar>
+    <Category></Category>
     <TaskList></TaskList>
+    <TaskDetail></TaskDetail>
   </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue'
-import AddTask from './components/AddTask.vue'
+import Sidebar from './components/Sidebar.vue'
+import Category from './components/Category.vue'
 import TaskList from './components/TaskList.vue'
+import TaskDetail from './components/TaskDetail.vue'
 
 export default {
   name: 'App',
   components: {
-    AppHeader,
-    AddTask,
-    TaskList
+    TaskList,
+    Sidebar,
+    Category,
+    TaskDetail
   }
 }
 </script>
 
-<style>
+<style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
 }
+
 </style>
