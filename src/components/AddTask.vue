@@ -1,7 +1,5 @@
 <template>
-  <header>
-    添加任务
-  </header>
+  <input type="text" placeholder="添加任务至“收集箱”，回车即可保存">
 </template>
 
 <script>
@@ -13,5 +11,5 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 </style>
