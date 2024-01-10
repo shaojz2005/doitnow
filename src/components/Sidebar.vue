@@ -5,7 +5,29 @@
     </div>
     <div class="menu">
       <a class="active" href="javascript:void(0)">
-        <svg t="1704814043557" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7711" width="200" height="200"><path d="M896 0H128C57.6 0 0 57.6 0 128v768c0 70.4 57.6 128 128 128h768c70.4 0 128-57.6 128-128V128c0-70.4-57.6-128-128-128zM448 794.496l-237.248-237.248 90.496-90.496L448 613.504l306.752-306.752 90.496 90.496L448 794.496z" p-id="7712" fill="#ffffff"></path></svg>
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-check-item-filling"></use>
+        </svg>
+      </a>
+      <a href="javascript:void(0)">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-calendar-fill"></use>
+        </svg>
+      </a>
+      <a href="javascript:void(0)">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-focus-2-fill"></use>
+        </svg>
+      </a>
+      <a href="javascript:void(0)">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-locationfill"></use>
+        </svg>
+      </a>
+      <a href="javascript:void(0)">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-check-square-fill"></use>
+        </svg>
       </a>
     </div>
   </div>
@@ -39,9 +61,21 @@ export default {
     }
     .menu{
       margin-top: 20px;
-      svg{
-        width: 20px;
-        height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a{
+        margin-bottom: 15px;
+        color: rgba(255,255,255,.4);
+        &:hover{
+          color: rgba(255,255,255,.6);
+        }
+        &.active{
+          color: #ffffff;
+        }
+      }
+      .icon{
+        font-size: 24px;
       }
     }
   }
