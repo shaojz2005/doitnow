@@ -5,8 +5,8 @@
     </div>
     <div class="menu">
       <a class="active" href="javascript:void(0)">
-        <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-check-item-filling"></use>
+        <svg class="icon icon-task" aria-hidden="true">
+            <use xlink:href="#icon-bxs-checkbox-checked"></use>
         </svg>
       </a>
       <a href="javascript:void(0)">
@@ -25,8 +25,25 @@
         </svg>
       </a>
       <a href="javascript:void(0)">
-        <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-check-square-fill"></use>
+        <svg class="icon icon-search" aria-hidden="true">
+            <use xlink:href="#icon-search"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="menu menu-bottom">
+      <a href="javascript:void(0)">
+        <svg class="icon icon-sync" aria-hidden="true">
+            <use xlink:href="#icon-sync"></use>
+        </svg>
+      </a>
+      <a href="javascript:void(0)">
+        <svg class="icon icon-notice" aria-hidden="true">
+            <use xlink:href="#icon-notice"></use>
+        </svg>
+      </a>
+      <a href="javascript:void(0)">
+        <svg class="icon icon-help" aria-hidden="true">
+            <use xlink:href="#icon-help-fill"></use>
         </svg>
       </a>
     </div>
@@ -60,7 +77,7 @@ export default {
       }
     }
     .menu{
-      margin-top: 20px;
+      margin-top: 12px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -75,7 +92,27 @@ export default {
         }
       }
       .icon{
-        font-size: 24px;
+        font-size: 26px;
+        &.icon-task{
+          font-size: 32px;
+        }
+        &.icon-search{
+          font-size: 22px;
+        }
+      }
+    }
+    .menu-bottom{
+      margin-top: auto;
+      .icon{
+        &.icon-sync{
+          font-size: 24px;
+        }
+        &.icon-notice{
+          font-size: 20px;
+        }
+        &.icon-help{
+          font-size: 20px;
+        }
       }
     }
   }
