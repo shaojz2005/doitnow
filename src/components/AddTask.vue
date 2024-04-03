@@ -12,4 +12,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
+  input{
+    background-color: rgba(25, 25, 25, 0.03);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+  }
 </style>
